@@ -12,7 +12,7 @@ const Characters = () => {
 
   useEffect(() => {
     getCharacters().then((data) =>
-      dispatch({ type: actions.GET_CHARACTER, payload: data.results })
+      dispatch({ type: actions.GET_CHARACTERS, payload: data.results })
     );
   }, [dispatch]);
   return (

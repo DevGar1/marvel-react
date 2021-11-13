@@ -53,3 +53,25 @@ export const CharacterStyled = styled.li`
     }
   }
 `;
+
+export const ModalComponent = styled.div`
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const ModalContent = styled.div`
+  position: absolute;
+  z-index: 500;
+  width: 80%;
+  height: 90vh;
+  background-color: white;
+  color: black;
+  overflow: scroll;
+`;

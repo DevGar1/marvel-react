@@ -1,10 +1,12 @@
 import "./App.css";
-import Characters from "./views/Characters";
-
+import Router from "./router";
+import { BrowserRouter } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <Characters />
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
     </div>
   );
 }

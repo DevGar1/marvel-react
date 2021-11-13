@@ -1,6 +1,13 @@
 import { createStore, combineReducers } from "redux";
 import { characterReducer } from "./character";
-
-const reducers = combineReducers({ characterReducer });
+import { comicsReducer } from "./comics";
+import { storiesReducer } from "./stories";
+import { seriesReducer } from "./series";
+const reducers = combineReducers({
+  characterReducer,
+  comicsReducer,
+  storiesReducer,
+  seriesReducer,
+});
 
 export default createStore(reducers);

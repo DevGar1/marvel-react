@@ -1,0 +1,16 @@
+.comic {
+  width: 20%;
+}
+
+.comic-price {
+  color: green;
+  font-size: 1.5rem;
+}
+
+h3 {
+    height: 40px;
+}
+
+img {
+  width: 250px;
+}
