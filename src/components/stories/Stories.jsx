@@ -13,7 +13,7 @@ const Stories = (props) => {
       dispatch({ type: actionsStories.GET_STORIES, payload: data })
     );
   }, [props.id, dispatch, path]);
-  const elements = stories.map((storie) => <Story key={storie.id} info={storie} />);
+  const elements = stories.map((story) => <Story key={story.id} info={story} />);
   return <div style={{ display: "flex ", flexWrap: "wrap" }}>{elements}</div>;
 };
 

@@ -32,15 +32,15 @@ const Character = () => {
   const getContent = (typeModal) => {
     switch (typeModal) {
       case "comics": {
-        content.current = <Comics id={id} />;
+        content.current = <Comics id={id} path={typeModal} />;
         break;
       }
       case "series": {
-        content.current = <Series id={id} />;
+        content.current = <Series id={id} path={typeModal} />;
         return;
       }
       case "stories": {
-        content.current = <Stories id={id} />;
+        content.current = <Stories id={id} path={typeModal} />;
         return;
       }
       default: {
@@ -76,7 +76,6 @@ const Character = () => {
       <div style={{ display: "flex", height: "100vh" }}>
         <div
           style={{
-            width: "100%",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -86,7 +85,7 @@ const Character = () => {
           <img
             src={image}
             alt={`Imagen del heroe ${name}`}
-            style={{ width: "100%", height: "90%", borderRadius: "15px" }}
+            style={{ width: "600px", height: "90%", borderRadius: "15px" }}
           />
         </div>
         <div style={{ color: "white", textAlign: "left", marginTop: "100px" }}>
