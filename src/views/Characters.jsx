@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { getCharacters } from "../axios";
 import { actions } from "../redux/character";
 import Character from "../components/Character";
+import Header from "../components/Header";
 
 const Characters = () => {
   const characters = useSelector((state) => state.characterReducer.characters);
@@ -14,7 +15,12 @@ const Characters = () => {
       dispatch({ type: actions.GET_CHARACTER, payload: data.results })
     );
   }, [dispatch]);
-  return <ul className="characters-section">{elements}</ul>;
+  return (
+    <>
+      <Header />
+      <ul className="characters-section">{elements}</ul>
+    </>
+  );
 };
 
 export default Characters;
